@@ -1,0 +1,430 @@
+<html>
+ <head>
+  <title>
+   C CODE HUB
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="topic-page">
+  <header class="site-header">
+   <a class="home-link" href="index.html">
+    ← Home
+   </a>
+   <h1 class="page-title">
+    OPERATORS
+   </h1>
+  </header>
+  <main class="content">
+   <br/>
+   <br/>
+   <!--1st-->
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      1.Write a program to show that example of pre-increment ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a = 5;
+    int b = ++a;
+    printf("a=%d, b=%d", a, b);
+}
+
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+a=6, b=6
+    </pre>
+    <!--2nd-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      2.Write a program to show that example of post-increment ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a = 5;
+    int b = a++;
+    printf("a=%d, b=%d", a, b);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+a=6, b=5
+    </pre>
+    <!--3rd-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      3.Write a program to show that example of pre-decrement ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a = 5;
+    int b = --a;
+    printf("a=%d, b=%d", a, b);
+}
+
+
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+a=4, b=4
+    </pre>
+    <!--4th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      4.Write a program to show that example of post-decrement ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a = 5;
+    int b = a--;
+    printf("a=%d, b=%d", a, b);
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+a=4, b=5
+    </pre>
+    <!--5th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      5.Write a program to enter 2 numbers from user add the number and show the answer , 
+  again take 2 number from user subtract the number display the answer ,again take 2 number from user multiply 
+  the number display the answer and ,again take 2 number from the user divide the number display the answer ,
+  again take 2 number find the remainder and display the answer ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a,b;
+    printf("Enter two numbers for addition: ");
+    scanf("%d %d",&amp;a,&amp;b);
+    printf("Addition=%d\n", a+b);
+
+    printf("Enter two numbers for subtraction: ");
+    scanf("%d %d",&amp;a,&amp;b);
+    printf("Subtraction=%d\n", a-b);
+
+    printf("Enter two numbers for multiplication: ");
+    scanf("%d %d",&amp;a,&amp;b);
+    printf("Multiplication=%d\n", a*b);
+
+    printf("Enter two numbers for division: ");
+    scanf("%d %d",&amp;a,&amp;b);
+    printf("Division=%d\n", a/b);
+
+    printf("Enter two numbers for remainder: ");
+    scanf("%d %d",&amp;a,&amp;b);
+    printf("Remainder=%d\n", a%b);
+}
+
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter two numbers for addition: 2 2
+Addition=4
+Enter two numbers for subtraction: 2 2
+Subtraction=0
+Enter two numbers for multiplication: 2 2
+Multiplication=4
+Enter two numbers for division: 2 2
+Division=1
+Enter two numbers for remainder: 2 2
+Remainder=0
+    </pre>
+    <!--6th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      6. Write a program to enter a number from the user ,the length of the number is depend on the user ,
+  programmer should print the last digit of number ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", #);
+    printf("Last digit: %d", num%10);
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter a number: 12
+Last digit: 2
+    </pre>
+    <!--7th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      7. Enter a decimal number from the user (float) and print the right hand side of the decimal point ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    float num;
+    int rhs;
+    printf("Enter a decimal number: ");
+    scanf("%f", #);
+    rhs = (num - (int)num) * 100000; 
+    printf("Right-hand side: %d", rhs);
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter a decimal number: 2.4
+Right-hand side: 40000
+    </pre>
+    <!--8th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      8. Enter a number from user and find out cube of numbers ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", #);
+    printf("Cube: %d", num*num*num);
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter a number: 2
+Cube: 8
+    </pre>
+    <!--9th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      9. Enter float number from user and round of the number ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    float num;
+    printf("Enter a float number: ");
+    scanf("%f", #);
+    printf("Rounded: %d", (int)(num + 0.5));
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter a float number: 2.4
+Rounded: 2
+    </pre>
+    <!--10th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      10. Enter a lower case character from user and print it into upper case ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    char ch;
+    printf("Enter a lowercase character: ");
+    scanf(" %c", &amp;ch);
+    printf("Uppercase: %c", ch-32);
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter a lowercase character: a
+Uppercase: A
+    </pre>
+    <!--11th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      11. Enter marks of students and calculate average of student’s marks ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int n, i, marks, sum=0;
+    printf("Enter number of students: ");
+    scanf("%d", &amp;n);
+    for(i=1;i&lt;=n;i++){
+        printf("Enter marks of student %d: ", i);
+        scanf("%d",&amp;marks);
+        sum += marks;
+    }
+    printf("Average marks: %.2f", (float)sum/n);
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter number of students: 3
+Enter marks of student 1: 77
+Enter marks of student 2: 58
+Enter marks of student 3: 98
+Average marks: 77.67
+    </pre>
+    <!--12th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      12. Calculate simple interest = (P x R x T)/ 100
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    float P, R, T, SI;
+    printf("Enter Principal, Rate, Time: ");
+    scanf("%f %f %f",&amp;P,&amp;R,&amp;T);
+    SI = (P*R*T)/100;
+    printf("Simple Interest: %.2f", SI);
+}
+
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter Principal, Rate, Time: 2 3 4
+Simple Interest: 0.24
+    </pre>
+   </section>
+  </main>
+ </body>
+</html>

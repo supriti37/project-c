@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>C CODE HUB</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+
+<body class="topic-page">
+
+<header class="site-header">
+<a class="home-link" href="index.html">← Home</a>
+<h1 class="page-title">RECURSION Questions</h1>
+</header>
+
+<main class="content">
+
+<!-- Question 1 -->
+
+<section class="question-card">
+
+<div class="question-title">
+<h2 class="question-heading">
+1. Write a program of recursion and display the output.
+</h2>
+</div>
+
+<div class="code-panel">
+<div class="panel-label">Code</div>
+</div>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+void show(int n)
+{
+    if(n==0)
+        return;
+
+    printf("%d ",n);
+    show(n-1);
+}
+
+void main()
+{
+    show(5);
+}
+</pre>
+
+<div class="output-panel">
+<div class="panel-label">Output</div>
+</div>
+
+<pre>
+5 4 3 2 1
+</pre>
+
+</section>
+
+<!-- Question 2 -->
+
+<section class="question-card">
+
+<div class="question-title">
+<h2 class="question-heading">
+2. Write a program of recursion with global variable and display the output.
+</h2>
+</div>
+
+<div class="code-panel">
+<div class="panel-label">Code</div>
+</div>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int x=1;
+
+void show()
+{
+    if(x&gt;5)
+        return;
+
+    printf("%d ",x);
+    x++;
+    show();
+}
+
+void main()
+{
+    show();
+}
+</pre>
+
+<div class="output-panel">
+<div class="panel-label">Output</div>
+</div>
+
+<pre>
+1 2 3 4 5
+</pre>
+
+</section>
+
+<!-- Question 3 -->
+
+<section class="question-card">
+
+<div class="question-title">
+<h2 class="question-heading">
+3. Write a program of recursion with local variable and display the output.
+</h2>
+</div>
+
+<div class="code-panel">
+<div class="panel-label">Code</div>
+</div>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+void show(int x)
+{
+    if(x&gt;5)
+        return;
+
+    printf("%d ",x);
+
+    show(x+1);
+}
+
+void main()
+{
+    show(1);
+}
+</pre>
+
+<div class="output-panel">
+<div class="panel-label">Output</div>
+</div>
+
+<pre>
+1 2 3 4 5
+</pre>
+
+</section>
+
+</main>
+
+</body>
+</html>

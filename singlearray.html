@@ -1,0 +1,632 @@
+<html>
+ <head>
+  <title>
+   C CODE HUB
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="topic-page">
+  <header class="site-header">
+   <a class="home-link" href="index.html">
+    ← Home
+   </a>
+   <h1 class="page-title">
+    SINGLE DIMENSON ARRAY
+   </h1>
+  </header>
+  <main class="content">
+   <br/>
+   <br/>
+   <!--1st-->
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      1.Enter an array from user and display all the value ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;Strings.h&gt;
+void main(){
+char array[5];
+int i;
+printf("Enter the array(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d :",i+1);
+scanf("%c",&amp;array[i]);
+}
+printf("Printing the array: ");
+for(i=0;i&lt;5;i++){
+printf("%c ",array[i]);
+}
+
+}
+
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter the array(size limit: 5): 
+1 :1
+2 :2
+3 :3
+4 :4
+5 :5
+Printing the array: 1 2 3 4 5 
+    </pre>
+    <!--2nd-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      2.Enter an array from user and print the array in reverse order ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;Strings.h&gt;
+void main(){
+char array[5];
+int i;
+
+printf("Enter the array(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.) value: ",i+1);
+scanf("%c",&amp;array[i]);
+}
+printf("Printing the array in reverse: ");
+for(i=4;i&gt;=0;i--){
+printf("%c ",array[i]);
+}
+
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter the array(size limit: 5):
+1.) value: 1  
+2.) value: 2
+3.) value: 3
+4.) value: 4
+5.) value: 5
+Printing the array in reverse: 5 4 3 2 1 
+    </pre>
+    <!--3rd-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      3. Enter an array from user and copy the array into second array ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+Enter the array1(size limit: 5): 
+
+void main(){
+char array1[5],array2[5];
+int i;
+
+printf("Enter the array1(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.): ",i+1);
+scanf("%c",&amp;array1[i]);
+}
+for(i=0;i&lt;5;i++){
+array2[i]=array1[i];
+}
+printf("Printing the copied array2: ");
+for(i=0;i&lt;5;i++){
+printf("%c ",array2[i]);
+}
+
+}
+
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter the array1(size limit: 5): 
+1.): 1   
+2.): 2
+3.): 3
+4.): 4
+5.): 5
+Printing the copied array2: 1 2 3 4 5
+    </pre>
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      4. Enter an array from user and copy it into another array in reverse order ?
+      </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+      <pre>
+#include &lt;stdio.h&gt;
+void main(){
+char array1[5],array2[5];
+int i;
+
+printf("Enter the array1(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.): ",i+1);
+scanf("%c",&amp;array1[i]);
+}
+for(i=0;i&lt;5;i++){
+array2[i]=array1[5-1-i];
+}
+printf("Printing the reverse copied array2: ");
+for(i=0;i&lt;5;i++){
+printf("%c ",array2[i]);
+}
+
+}
+</pre>
+      <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+      <pre>
+Enter the array1(size limit: 5):
+1.): 1
+2.): 2
+3.): 3
+4.): 4
+5.): 5
+Printing the reverse copied array2: 5 4 3 2 1 
+    </pre>
+       </section>
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+     
+       5.Enter an array from user and print the number which is even ?
+       </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+
+      <pre>
+#include &lt;stdio.h&gt;
+void main(){
+int array[5];
+int i;
+
+printf("Enter the array(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.)Value: ",i+1);
+scanf("%c",&amp;array[i]);
+}
+printf("Printing the even part of array: ");
+for(i=0;i&lt;5;i++){
+if(array[i]%2==0)
+printf("%c ",array[i]);
+}
+
+}
+    </pre>
+       <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+      <pre>
+Enter the array(size limit: 5): 
+1.)Value: 1
+2.)Value: 2
+3.)Value: 3
+4.)Value: 4
+5.)Value: 5
+Printing the even part of array: 2 4
+    </pre>
+      </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+
+       6.Enter an array from user and print the number which is positive ?
+      </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+      <pre>
+#include &lt;stdio.h&gt;
+void main(){
+int array[5];
+int i;
+
+printf("Enter the array avlues(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.)Value: ",i+1);
+scanf("%d",&amp;array[i]);
+}
+printf("Printing the positive part of array: ");
+for(i=0;i&lt;5;i++){
+if(array[i]&gt;0)
+printf("%d ",array[i]);
+}
+
+}
+</pre>
+      <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+      <pre>
+Enter the array avlues(size limit: 5): 
+1.)Value: 1
+2.)Value: -2
+3.)Value: 3
+4.)Value: -4
+5.)Value: -5
+Printing the positive part of array: 1 3 
+    </pre>
+      </section>
+      <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+       7.Enter an array from user and square all the values of array ?
+      </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+      <pre>
+#include &lt;stdio.h&gt;
+void main(){
+int array[5];
+int i;
+printf("Enter the array(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.)Value: ",i+1);
+scanf("%d",&amp;array[i]);
+}
+for(i=0;i&lt;5;i++){
+array[i]=array[i]*array[i];
+}
+printf("Printing the modified array(every number is sqared): ");
+for(i=0;i&lt;5;i++){
+printf("%d ",array[i]);
+}
+}
+</pre>
+      <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+      <pre>
+Enter the array(size limit: 5): 
+1.)Value: 1
+2.)Value: 2
+3.)Value: 3
+4.)Value: 4
+5.)Value: 5
+Printing the modified array(every number is sqared): 1 4 9 16 25
+    </pre>
+      </section>
+     <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+
+       8.Enter 5 values of array from user and print odd number of array ?
+      </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+      <pre>
+#include &lt;stdio.h&gt;
+void main(){
+int array[5];
+int i;
+printf("Enter the array(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.)Value: ",i+1);
+scanf("%d",&amp;array[i]);
+}
+printf("Printing the odd part of array: ");
+for(i=0;i&lt;5;i++){
+if(array[i]%2!=0)
+printf("%d ",array[i]);
+}
+}
+</pre>
+       <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+      <pre>
+Enter the array(size limit: 5): 
+1.)Value: 1
+2.)Value: 2
+3.)Value: 3
+4.)Value: 4
+5.)Value: 5
+Printing the odd part of array: 1 3 5
+    </pre>
+</section>     
+ <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+       9.Enter 5 values of array from user and add all values ?
+        </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main(){
+int array[5],i,sum=0;
+printf("Enter the array(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.)Value: ",i+1);
+scanf("%d",&amp;array[i]);
+}
+for(i=0;i&lt;5;i++){
+sum=array[i]+sum;
+}
+printf("Sum of all the values: %d",sum);
+}
+</pre>
+<div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+
+            <pre><b>
+Enter the array(size limit: 5): 
+1.)Value: 1
+2.)Value: 2
+3.)Value: 3
+4.)Value: 4
+5.)Value: 5
+Sum of all the values: 15</b>
+    </pre>
+     </section>
+       <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+       10. Enter 5 values of array from user, enter a value from user and search this value in array, if value is found then print “found” or not 
+    then print “not found”?
+           </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+ <pre>
+#include &lt;stdio.h&gt;
+void main(){
+int array[5],i,c;
+printf("Enter the array(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.)Value: ",i+1);
+scanf("%d",&amp;array[i]);
+}
+printf("Enter the value to search: ");
+scanf("%d",&amp;c);
+for(i=0;i&lt;5;i++){
+if(array[i]==c){
+printf("Found");
+goto jump;
+}
+}
+printf("not found");
+jump:
+}
+</pre>
+        <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter the array(size limit: 5): 
+1.)Value: 1
+2.)Value: 2
+3.)Value: 3
+4.)Value: 4
+5.)Value: 5
+Enter the value to search: 1
+Found
+    </pre>
+      </section>
+ <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">     
+       11.Enter five values of array and sort in ascending order ?
+      </h2>
+          </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+  <pre>
+#include &lt;stdio.h&gt;
+void main(){
+int array[5],i,j,temp;
+printf("Enter the array(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.)Value: ",i+1);
+scanf("%d",&amp;array[i]);
+}
+for(i=0;i&lt;5;i++){
+for(j=i+1;j&lt;5;j++){
+if(array[i]&gt;array[j]){
+temp=array[j];
+array[j]=array[i];
+array[i]=temp;}
+}
+}
+printf("Printing the array in ascending order: \n");
+for(i=0;i&lt;5;i++){
+printf("%d ",array[i]);
+}
+}
+</pre>
+           <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+  <pre>
+Enter the array(size limit: 5): 
+1.)Value: 1
+2.)Value: 4
+3.)Value: 3
+4.)Value: 5
+5.)Value: 2
+Printing the array in ascending order:
+1 2 3 4 5
+    </pre>
+    </section>
+      <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+       12. Find maximum values of array ?
+      </h2>
+        </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+     <pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int a[5], i, max;
+    printf("Enter 5 array elements:\n");
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    max = a[0];
+    for(i = 1; i < 5; i++)
+    {
+        if(a[i] > max)
+        {
+            max = a[i];
+        }
+    }
+    printf("Maximum value = %d", max);
+    return 0;
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter 5 array elements:
+10 25 5 40 15
+
+Maximum value = 40
+    </pre>
+</section>
+ <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+13. Find minimum values of array ?</h2>
+       </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+  <pre>
+#include &lt;stdio.h&gt;
+void main(){
+int array[5],i,check=array[0];
+printf("Enter the array(size limit: 5): \n");
+for(i=0;i&lt;5;i++){
+fflush(stdin);
+printf("%d.)Value: ",i+1);
+scanf("%d",&amp;array[i]);
+}
+for(i=0;i&lt;5;i++){
+if(check&gt;array[i])check=array[i];
+}
+printf("Minimum value of the array %d",check);
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter the array(size limit: 5): 
+1.)Value: 1
+2.)Value: 2
+3.)Value: 3
+4.)Value: 4
+5.)Value: 5
+Minimum value of the array 1
+    </pre>
+</section>
+  </main>
+ </body>
+</html>

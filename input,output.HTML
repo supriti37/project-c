@@ -1,0 +1,446 @@
+<html>
+ <head>
+  <title>
+   C CODE HUB
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="topic-page">
+  <header class="site-header">
+   <a class="home-link" href="index.html">
+    ← Home
+   </a>
+   <h1 class="page-title">
+    Basic input/output
+   </h1>
+  </header>
+  <main class="content">
+   <br/>
+   <br/>
+   <!--1st-->
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      1. Write a program to print the message: Today I made my first C Program.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+  printf("Today I made my first C program.");
+  getch();
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Today I made my first C program.
+    </pre>
+    <!--2nd-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      2. Write a program to read a character from the keyboard and display it on the screen.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main() {
+  char ch;
+  clrscr();
+  printf("Type a character: ");
+  scanf("%c", &amp;ch);
+  printf("The character is: %c", ch);
+  getch();
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Type a character: k
+The character is: k
+    </pre>
+    <!--3rd-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      3. Write a program to print your name at the center of the first line.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+  printf("\t\t\t\t\t         SUPRITI\n");
+  getch();
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+                               SUPRITI                     
+    </pre>
+    <!--4th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      4. Write a program to store a single quote and print that variable to show single quote on output screen.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main() {
+  char ch = '\'';
+  clrscr();
+  printf("Single quote is: %c", ch);
+  getch();
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Single quote is: '
+    </pre>
+    <!--5th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      5. Write a program for printing your name on output screen but your name should blink 5 times
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;
+void main(){
+    int i;
+    for(i=1;i&lt;=5;i++){
+     
+        printf("abc");
+        delay(500);
+       clrscr();
+
+       delay(500);
+    }
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+
+    </pre>
+    <!--6th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      6. Write the program to display this output ? <br>#include
+      &lt;stdio.h&gt;<br>
+       #include
+          &lt;conio.h&gt;<br>
+        #include
+           &lt;dos.h&gt;<br>
+         void main ()<br> { <br>clrscr(); <br>printf(“hello,welcome to c”);<br> delay(5000);<br>}<br>
+             </h2>
+    </div><div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+
+    <pre>#include < stdio.h > 
+#include < conio.h >
+#include < dos.h > 
+void main () {
+clrscr(); 
+printf(“hello,welcome to c”); 
+delay(5000);
+}</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+    hello,welcome to c
+    </pre>
+    <!--7th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      7. Write a program to print your name at the center of the page ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+    #include< stdio.h >
+void main(){
+    printf("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t     SUPRITI");
+}
+  </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+
+
+
+
+
+
+                                             SUPRITI
+
+
+
+
+
+      </pre>
+    <!--8th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      8. Enter password display like ****** ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include< stdio.h >
+void main(){
+    char a,b,c,d,e,f;
+    printf("enter password(6 word): ");
+    scanf("%c %c %c %c %c %c",&amp;a,&amp;b,&amp;c,&amp;d,&amp;e,&amp;f);
+    printf("pass is ******");
+}
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+enter password(6 word):******
+pass is55555
+</pre>
+    <!--9th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      9. Enter two character from user and print ASCII value ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include< stdio.h >
+void main(){
+    char a;
+    char b;
+    printf("enter first character: ");
+    scanf("%c %c",&amp;a,&amp;b);
+    //printf("enter second character: ");
+    //scanf("%c",&amp;b);
+    printf("ascii value is %d and %d",a,b);
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+enter first character: x
+enter second character: y
+ascii value is 120 and 121
+</pre>
+    <!--10th-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      10. Print all ASCII character 0 to 127 ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include< stdio.h >
+void main(){
+int i;
+for(i=0;i&lt;=127;i++){
+    printf("%c\n",i);
+}
+}
+
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+(space)
+!
+"
+#
+$
+%
+&amp;
+'
+(
+)
+*
++
+,
+-
+.
+/
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+:
+;
+&lt;
+=
+&gt; 
+?
+@
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+[
+\
+]
+^
+_
+`
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+{
+|
+}
+~
+⌂
+</pre>
+   </section>
+  </main>
+ </body>
+</html>

@@ -1,0 +1,529 @@
+<html>
+ <head>
+  <title>
+   function
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="topic-page">
+  <header class="site-header">
+   <a class="home-link" href="index.html">
+    ← Home
+   </a>
+   <h1 class="page-title">
+    FUNCTIONS
+   </h1>
+  </header>
+  <main class="content">
+   <br/>
+   <br/>
+   <!--1st-->
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      1.  Write a program to enter 2 number from the users add them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user add them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user add them and display the answer ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+int add(){
+    int x,y;
+    printf("enter number to add: ");
+    scanf("%d",&amp;x);
+    printf("enter number to add:  ");
+    scanf("%d",&amp;y);
+return x+y;
+}
+int sub(){
+    int x,y;
+    printf("enter number to subtract: ");
+    scanf("%d",&amp;x);
+    printf("enter number to subtract:  ");
+    scanf("%d",&amp;y);
+    return x-y;
+}
+int multiply(){
+    int x,y;
+    printf("enter number to multiply: ");
+    scanf("%d",&amp;x);
+    printf("enter number to mulitply:  ");
+    scanf("%d",&amp;y);
+    return x*y;
+}
+float div(){
+    float x,y;
+    printf("enter number to divide: ");
+    scanf("%f",&amp;x);
+    printf("enter number to divide:  ");
+    scanf("%f",&amp;y);
+    return x/y;
+}
+void main(){
+int c;
+float a;
+c=add();
+printf("addition is %d\n",c);
+c=sub();
+printf("subtractions is %d\n",c);
+c=add();
+printf("addition is %d\n",c);
+c=multiply();
+printf("multiplication is %d\n",c);
+c=sub();
+printf("subtractions is %d\n",c);
+c=multiply();
+printf("multiplication is %d\n",c);
+a=div();
+printf("division is %f\n",a);
+a=div();
+printf("division is %f\n",a);
+c=multiply();
+a=div();
+printf("division and multiplication is \n%f and %d",a,c);
+
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+enter number to add: 2
+enter number to add:  2
+addition is 4
+enter number to subtract: 2
+enter number to subtract:  2
+subtractions is 0
+enter number to add: 2
+enter number to add:  2
+addition is 4
+enter number to multiply: 2
+enter number to mulitply:  2
+multiplication is 4
+enter number to subtract: 2
+enter number to subtract:  2
+subtractions is 0
+enter number to multiply: 2
+enter number to mulitply:  2
+multiplication is 4
+enter number to divide: 2
+enter number to divide:  2
+division is 1.000000
+enter number to divide: 2
+enter number to divide:  2
+division is 1.000000
+enter number to multiply: 2
+enter number to mulitply:  2
+enter number to divide: 2
+enter number to divide:  2
+division and multiplication is
+1.000000 and 4
+    </pre>
+    <!--2nd-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      2. Write a program to enter 10 number from the user add the number and display the answer ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void input(){
+    int i,x=0,y;
+    for(i=1;i&lt;=10;i++){
+    printf("enter number: ");
+    scanf("%d",&amp;y);
+    x=x+y;
+    }
+    printf("%d",x);
+}
+void main(){
+    input();
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+enter number: 1
+enter number: 2
+enter number: 3
+enter number: 4
+enter number: 5
+enter number: 6
+enter number: 7
+enter number: 8
+enter number: 9
+enter number: 10
+55
+    </pre>
+    <!--3rd-->
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      3. Write a program to return an array from function ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+
+int* abc()
+{
+    static int a[5];
+    int i;
+
+    printf("Enter 5 elements:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    return a;
+}
+
+int main()
+{
+    int *p, i;
+
+    p = abc();
+
+    printf("Array elements are:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d ", p[i]);
+    }
+
+    return 0;
+}</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+
+    <pre>
+ Enter 5 elements:
+1 2 3 4 5
+
+Array elements are:
+1 2 3 4 5
+    </pre>
+</section>
+ <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+
+4. Making following program using local and global variable ? Factorial , Reverse , Palindrome , Prime numbers, Armstrong , Fibonacci
+    </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+ <pre>
+#include &lt;stdio.h&gt;
+int n; 
+void input() {
+    printf("Enter number: ");
+    scanf("%d", &amp;n);
+}
+void factorial() {
+    int i,f=1;
+    for(i=1;i&lt;=n;i++)
+        f=f*i;
+    printf("Factorial = %d\n", f);
+}
+void reverse() {
+     int x,i=0,y;
+    printf("enter a number: ");
+    scanf("%d",&amp;x);
+ while(x&gt;0){
+    y=x%10;
+    i=i*10+y;
+    x=x/10;
+ }
+ printf("%d",i);
+ }
+
+
+void palindrome() {
+    int n,t,r,s=0;
+printf("enter no: ");
+scanf("%d",&amp;n);
+t=n;
+while(n&gt;0){
+r=n%10;
+s=s*10+r;
+n=n/10;
+}
+if(t==s)
+printf("palindrome");
+else
+printf("not palindrome");
+}
+
+void prime() {
+    int i, c=0; 
+    for(i =1;i&lt;=n;i++) {
+        if(n %i==0)
+            c++;
+    }
+    if(c == 2)
+        printf("Prime = Yes\n");
+    else
+        printf("Prime = No\n");
+}
+void armstrong() {
+    int temp =n, sum =0, r; 
+    while(temp !=0) {
+        r = temp%10;
+        sum +=r*r*r;
+        temp/=10;
+    }
+    if(sum == n)
+        printf("Armstrong = Yes\n");
+    else
+        printf("Armstrong = No\n");
+}
+void fibonacci() {
+    int a=0,b=1, c; 
+    printf("Fibonacci: %d %d ", a, b);
+    for(int i=2;i&lt;=n;i++) {
+        c=a +b;
+        printf("%d ",c);
+        a=b;
+        b=c;
+    }
+   printf("\n");
+}
+void main() {
+    input();     
+    factorial();
+    reverse();
+    palindrome();
+    prime();
+    armstrong();
+    fibonacci();
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+
+    <pre>
+Enter number: 12
+Factorial = 479001600
+Reverse = 21
+Palindrome = No
+Prime = No
+Armstrong = No
+Fibonacci: 0 1 1 2 3 5 8 13 21 34 55 89 144
+    </pre>
+</section>
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+
+    5.Swap numbers using Call by address ?
+    </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+ <pre>
+#include &lt;stdio.h&gt;
+void swap(int *x,int *y){
+    int z;
+    z=*x;
+    *x=*y;
+    *y=z;
+}
+void og(int a,int b){
+    printf("original value of \na=%d\nb=%d\n ",a,b);
+}
+void main(){
+int a,b;
+a=20;
+b=10;
+og(a,b);
+swap(&amp;a,&amp;b);
+printf("swaped values are \n");
+printf("a= %d\n",a);
+printf("b= %d\n",b);
+}
+    </pre>
+   <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+
+    <pre>
+original value of 
+a=20
+b=10
+ swaped values are
+a= 10
+b= 20
+    </pre>
+</section>
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+
+6. Swap numbers using Call by function ?
+   </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+ <pre>
+#include &lt;stdio.h&gt;
+void fn(int a,int b){
+    int z;
+    z=a;
+    a=b;
+    b=z;
+    printf("\nswapped values are:\n x=%d\ny=%d",a,b);
+}
+void main(){
+int x,y;
+x=10;
+y=20;
+printf("original values are: \nx=%d\ny=%d",x,y);
+fn(x,y);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+original values are: 
+x=10
+y=20
+swapped values are:
+ x=20
+y=10
+    </pre>
+</section>
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+7.Make function for find out power of number, enter the number and power from user ?    
+</h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+<pre>
+#include &lt;stdio.h&gt;
+int input(){
+    int x;
+    printf("enter number: ");
+    scanf("%d",&amp;x);
+    return x;
+}
+int p(){
+    int y;
+    printf("enter power: ");
+    scanf("%d",&amp;y);
+    return y;
+}
+void main(){
+int a,b,c=1;
+a=input();
+b=p();
+for(int n=1;n&lt;=b;n++){
+c=a*c;
+}
+printf("answer is %d",c);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+  enter number: 2
+enter power: 3
+answer is 8
+    </pre>
+</section>
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+8.Make function for find out Cube a user entered number ?
+  </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+  <pre>
+#include &lt;stdio.h&gt;
+int input(){
+    int x;
+printf("enter number: ");
+scanf("%d",&amp;x);
+return x;
+}
+void cube(int a){
+    int z;
+    z=(a*a)*a;
+    printf("cube is %d",z);
+}
+void main(){
+int a;
+a=input();
+cube(a);
+}
+    </pre>
+     <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+ enter number: 3
+cube is 27
+    </pre>
+   </section>
+  </main>
+ </body>
+</html>

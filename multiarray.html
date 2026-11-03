@@ -1,0 +1,256 @@
+<html>
+ <head>
+  <title>
+   C CODE HUB
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="topic-page">
+  <header class="site-header">
+   <a class="home-link" href="index.html">
+    ← Home
+   </a>
+   <h1 class="page-title">
+    MULTI DIMENSIONAL ARRAY
+   </h1>
+  </header>
+  <main class="content">
+   <br/>
+   <br/>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      1. Enter the four number from user and print it into matrix
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+
+void main()
+{
+    int mat[2][2];
+
+    printf("Enter 4 numbers:\n");
+
+    scanf("%d", &mat[0][0]);
+    scanf("%d", &mat[0][1]);
+    scanf("%d", &mat[1][0]);
+    scanf("%d", &mat[1][1]);
+
+    printf("\nMatrix:\n");
+
+    printf("%d\t%d\n", mat[0][0], mat[0][1]);
+    printf("%d\t%d\n", mat[1][0], mat[1][1]);
+
+    return 0;
+}
+<div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter 4 numbers: 1 2 3 4
+Matrix:
+1       2
+3       4
+    </pre>
+   </section>
+
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      2.Enter the matrix from and transpose them ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int mat[2][2], trans[2][2], i, j;
+    printf("Enter 4 numbers for 2x2 matrix: ");
+    for(i=0;i&lt;2;i++){
+        for(j=0;j&lt;2;j++){
+            scanf("%d",&amp;mat[i][j]);
+            trans[j][i] = mat[i][j];
+        }
+    }
+    printf("Transpose Matrix:\n");
+    for(i=0;i&lt;2;i++){
+        for(j=0;j&lt;2;j++){
+            printf("%d\t", trans[i][j]);
+        }
+        printf("\n");
+    }
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter 4 numbers for 2x2 matrix: 1 2 3 4      
+Transpose Matrix:
+1       3
+2       4
+    </pre>
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      3. Enter 2 matrix from user and add them ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a[2][2], b[2][2], sum[2][2], i, j;
+    printf("Enter 4 numbers for first matrix: ");
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            scanf("%d",&amp;a[i][j]);
+    printf("Enter 4 numbers for second matrix: ");
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            scanf("%d",&amp;b[i][j]);
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            sum[i][j] = a[i][j] + b[i][j];
+    printf("Sum Matrix:\n");
+    for(i=0;i&lt;2;i++){
+        for(j=0;j&lt;2;j++)
+            printf("%d\t", sum[i][j]);
+        printf("\n");
+    }
+}
+
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter 4 numbers for first matrix: 1 2 3 4
+Enter 4 numbers for second matrix: 1 2 3 4
+Sum Matrix:
+2       4
+6       8
+    </pre>
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      4. Enter 2 matrix from user and subtract them ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a[2][2], b[2][2], sub[2][2], i, j;
+    printf("Enter 4 numbers for first matrix: ");
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            scanf("%d",&amp;a[i][j]);
+    printf("Enter 4 numbers for second matrix: ");
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            scanf("%d",&amp;b[i][j]);
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            sub[i][j] = a[i][j] - b[i][j];
+    printf("Subtraction Matrix:\n");
+    for(i=0;i&lt;2;i++){
+        for(j=0;j&lt;2;j++)
+            printf("%d\t", sub[i][j]);
+        printf("\n");
+    }
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter 4 numbers for first matrix: 1 2 3 4
+Enter 4 numbers for second matrix: 1 2 3 4
+Subtraction Matrix:
+0       0
+0       0
+    </pre>
+   </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      5.Enter 2 matrix from user and multiply them ?
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+    int a[2][2], b[2][2], mul[2][2], i, j, k;
+    printf("Enter 4 numbers for first matrix: ");
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            scanf("%d",&amp;a[i][j]);
+    printf("Enter 4 numbers for second matrix: ");
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            scanf("%d",&amp;b[i][j]);
+    for(i=0;i&lt;2;i++){
+        for(j=0;j&lt;2;j++){
+            mul[i][j]=0;
+            for(k=0;k&lt;2;k++)
+                mul[i][j] += a[i][k]*b[k][j];
+        }
+    }
+    printf("Multiplication Matrix:\n");
+    for(i=0;i&lt;2;i++){
+        for(j=0;j&lt;2;j++)
+            printf("%d\t", mul[i][j]);
+        printf("\n");
+    }
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter 4 numbers for first matrix: 1 2 3 4
+Enter 4 numbers for second matrix: 1 2 3 4
+Multiplication Matrix:
+7       10
+15      22
+    </pre>
+   </section>
+  </main>
+ </body>
+</html>
