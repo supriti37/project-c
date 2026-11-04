@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>C CODE HUB</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+
+<body class="topic-page">
+
+<header class="site-header">
+<a class="home-link" href="index.html">← Home</a>
+<h1 class="page-title">RECURSION Questions</h1>
+</header>
+
+<main class="content">
+
+<!-- Question 1 -->
+
+<section class="question-card">
+
+<div class="question-title">
+<h2 class="question-heading">
+1. Write a recursive function to calculate the sum of first n natural numbers.
+</h2>
+</div>
+
+<div class="code-panel">
+<div class="panel-label">Code</div>
+</div>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int sum(int n)
+{
+    if(n==1)
+        return 1;
+
+    return n + sum(n-1);
+}
+
+void main()
+{
+    int n;
+
+    printf("Enter a number: ");
+    scanf("%d",&n);
+
+    printf("Sum = %d",sum(n));
+}
+</pre>
+
+<div class="output-panel">
+<div class="panel-label">Output</div>
+</div>
+
+<pre>
+Enter a number: 5
+Sum = 15
+</pre>
+
+</section>
+
+<!-- Question 2 -->
+
+<section class="question-card">
+
+<div class="question-title">
+<h2 class="question-heading">
+2. Write a recursive function to calculate the factorial of a given number.
+</h2>
+</div>
+
+<div class="code-panel">
+<div class="panel-label">Code</div>
+</div>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int fact(int n)
+{
+    if(n==0 || n==1)
+        return 1;
+
+    return n * fact(n-1);
+}
+
+void main()
+{
+    int n;
+
+    printf("Enter a number: ");
+    scanf("%d",&n);
+
+    printf("Factorial = %d",fact(n));
+}
+</pre>
+
+<div class="output-panel">
+<div class="panel-label">Output</div>
+</div>
+
+<pre>
+Enter a number: 5
+Factorial = 120
+</pre>
+
+</section>
+
+</main>
+
+</body>
+</html>
