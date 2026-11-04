@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>C CODE HUB</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+
+<body class="topic-page">
+
+<header class="site-header">
+<a class="home-link" href="index.html">← Home</a>
+<h1 class="page-title">POINTER Questions</h1>
+</header>
+
+<main class="content">
+
+<!-- Question 1 -->
+
+<section class="question-card">
+
+<div class="question-title">
+<h2 class="question-heading">
+1. Write a C program to enter and print all elements of an array using a pointer.
+</h2>
+</div>
+
+<div class="code-panel">
+<div class="panel-label">Code</div>
+</div>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+void main()
+{
+    int a[5], i;
+    int *p;
+
+    p = a;
+
+    printf("Enter 5 elements:\n");
+
+    for(i=0;i&lt;5;i++)
+    {
+        scanf("%d",p+i);
+    }
+
+    printf("Array Elements are:\n");
+
+    for(i=0;i&lt;5;i++)
+    {
+        printf("%d ",*(p+i));
+    }
+}
+</pre>
+
+<div class="output-panel">
+<div class="panel-label">Output</div>
+</div>
+
+<pre>
+Enter 5 elements:
+10
+20
+30
+40
+50
+
+Array Elements are:
+10 20 30 40 50
+</pre>
+
+</section>
+
+<!-- Question 2 -->
+
+<section class="question-card">
+
+<div class="question-title">
+<h2 class="question-heading">
+2. Write a program to swap two numbers using pointers.
+</h2>
+</div>
+
+<div class="code-panel">
+<div class="panel-label">Code</div>
+</div>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+void main()
+{
+    int a,b,temp;
+    int *p1,*p2;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d",&a,&b);
+
+    p1=&a;
+    p2=&b;
+
+    temp=*p1;
+    *p1=*p2;
+    *p2=temp;
+
+    printf("After Swapping:\n");
+    printf("A=%d\n",a);
+    printf("B=%d",b);
+}
+</pre>
+
+<div class="output-panel">
+<div class="panel-label">Output</div>
+</div>
+
+<pre>
+Enter two numbers: 10 20
+
+After Swapping:
+A=20
+B=10
+</pre>
+
+</section>
+
+<!-- Question 3 -->
+
+<section class="question-card">
+
+<div class="question-title">
+<h2 class="question-heading">
+3. A pointer should point the array and through pointer we will fill all the locations of the array by asking the value from the user and print the array.
+</h2>
+</div>
+
+<div class="code-panel">
+<div class="panel-label">Code</div>
+</div>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+void main()
+{
+    int a[5];
+    int *p;
+    int i;
+
+    p=a;
+
+    printf("Enter 5 values:\n");
+
+    for(i=0;i&lt;5;i++)
+    {
+        scanf("%d",(p+i));
+    }
+
+    printf("Array Elements:\n");
+
+    for(i=0;i&lt;5;i++)
+    {
+        printf("%d ",*(p+i));
+    }
+}
+</pre>
+
+<div class="output-panel">
+<div class="panel-label">Output</div>
+</div>
+
+<pre>
+Enter 5 values:
+5
+10
+15
+20
+25
+
+Array Elements:
+5 10 15 20 25
+</pre>
+
+</section>
+
+</main>
+
+</body>
+</html>
